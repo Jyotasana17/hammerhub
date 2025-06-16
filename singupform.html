@@ -1,0 +1,105 @@
+<!-- HTML Code for Sign-up Form
+Here's an example HTML code for a sign-up form that includes fields for working status, designation, date of birth, address, and education: -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .signup-form {
+            width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .signup-form label {
+            display: block;
+            width: 95%;
+            margin-bottom: 10px;
+        }
+        .signup-form input, .signup-form select {
+            width: 95%;
+            height: 40px;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        .signup-form button {
+            width: 100%;
+            height: 40px;
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .signup-form button:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+    <div class="signup-form">
+        <h2>Sign-up</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+             <label for="Mobile Number">Mobile Number:</label>
+            <input type="number" id="email" name="Mobile number" required>
+
+            <label for="working-status">Working Status:</label>
+            <select id="working-status" name="working-status">
+                <option value="">Select</option>
+                <option value="">Employed</option>
+                <option value="unemployed">Unemployed</option>
+                <option value="student">Student</option>
+            </select>
+             <label for="working-experience">working-Experience:</label>
+            <input type="text" placeholder="">
+
+            <label for="designation">Designation:</label>
+            <input type="text" id="designation" name="designation">
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="3" cols="50" required></textarea>
+
+            <label for="education">Education:</label>
+            <select id="education" name="education">
+                <option value="">Select</option>
+                <option value="high-school">High School</option>
+                <option value="diploma">Diploma</option>
+                <option value="bachelor">Bachelor's Degree</option>
+                <option value="master">Master's Degree</option>
+                <option value="phd">PhD</option>
+            </select>
+
+            <label for="About-you">Something About You:</label>
+            <input type="text" placeholder="">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+
+            <button type="submit">Sign-up</button>
+        </form>
+    </div>
+</body>
+</html>
