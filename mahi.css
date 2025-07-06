@@ -1,0 +1,238 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background-image {
+            position: relative;
+            background-image: url('https://5.imimg.com/data5/SELLER/Default/2024/1/381535193/IN/BT/DN/103789432/construction-planning-service.webp');
+            background-size: cover;
+            background-position: center;
+            height: 97vh;
+            width: 98vw;
+        }
+
+ .navbar{
+    position:  relative;
+    top:-5px;
+    left: -5px;
+    right: -25px;
+    height: 60px;
+    width: 100%;
+    gap:220px;
+    display: flex;
+    background-color: #0f1111;
+   padding-top: 5px;
+   padding-left: 5px;
+}
+
+
+.searchbar{
+    display: flex;
+    gap:5px;
+    position: relative;
+    justify-content: flex-end;
+}
+.search{
+    width: 190px;
+    height: 20px;
+    text-align: left;
+    color: gray;
+    padding: 1px;
+    background-color: white;
+    border: 1px solid #0f1111;
+
+}
+button{
+    font-size: large;
+    width: 60px;
+    height: 22px;
+    text-align:center;
+    color: rgb(251, 248, 248);
+    background-color: #f08804;
+    border: 1px solid #0f1111;
+    padding: 1px;
+
+}
+.translucent-box {
+            font-size: large;
+            position: absolute;
+            width: 750px;
+            top: 50%;
+            left: 28%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin-left: 40px;
+        }
+
+.hyperlinks{
+    display: flex;
+    gap: 250px;
+    text-decoration: none;
+}
+
+.hyper{
+    text-decoration: none;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navigation */
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+
+.logo {
+    position: relative;
+
+
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav .btn {
+  background: #fff;
+  color: #333;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero */
+.hero {
+   height: 97vh;
+    width: 100%;
+    overflow-x: hidden;
+  background: url('https://5.imimg.com/data5/SELLER/Default/2024/1/381535193/IN/BT/DN/103789432/construction-planning-service.webp') center/cover no-repeat;
+  position: relative;
+  display: flex;
+  /* align-items: center; */
+  padding: 5px 10px;
+}
+
+.hero-content {
+  color: #fff;
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1rem;
+}
+
+/* Search Bar */
+.search-bar {
+  background: #d9d5d5;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  position: relative;
+  top: -2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 50px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.search-bar input {
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+}
+
+.search-bar button {
+    
+  background: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 0 2rem;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+/* Most Viewed */
+.most-viewed {
+margin-top: -20px;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.most-viewed h2 {
+  font-size: 2rem;
+}
+
+.most-viewed .cards {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  max-width: 300px;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.card-info {
+  padding: 1rem;
+}
+
+.card-info h3 {
+  margin-bottom: 0.5rem;
+}
+
+/* CTA Section */
+.cta {
+  background: #f9f9f9;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.cta h2 {
+  font-size: 2rem;
+}

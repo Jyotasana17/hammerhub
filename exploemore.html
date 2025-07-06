@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D House Model</title>
+    <link rel="stylesheet" href="explormore.css">
+</head>
+<body>
+    <div class="container">
+        <h1>3D House Model on Land</h1>
+        <form id="house-form">
+            <label for="num-rooms">Number of Rooms:</label>
+            <input type="number" id="num-rooms" name="num-rooms" min="1" max="10" value="3">
+            <br><br>
+            <label for="land-area">Land Area (sq.m):</label>
+            <input type="number" id="land-area" name="land-area" min="50" max="1000" value="200">
+            <br><br>
+            <button id="generate-btn">Generate 3D Model</button>
+        </form>
+        <div id="model-container"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/three@0.147.0/build/three.min.js"></script>
+    <script src="exploremore.js"></script>
+</body>
+</html>

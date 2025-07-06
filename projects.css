@@ -1,28 +1,64 @@
-#project-posting-form {
-    max-width: 800px;
+body {
+    font-family: Arial, sans-serif;
+}
+.hero {
+   height: 97vh;
+    width: 100%;
+    overflow-x: hidden;
+  background: url('https://5.imimg.com/data5/SELLER/Default/2024/1/381535193/IN/BT/DN/103789432/construction-planning-service.webp') center/cover no-repeat;
+  position: relative;
+  display: flex;
+  /* align-items: center; */
+  padding: 5px 10px;
+}
+.container {
+    width: 90%;
     margin: 40px auto;
     padding: 20px;
-    background-color: #f9f9f9;
     border: 1px solid #ddd;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.form-group {
-    margin-bottom: 20px;
+.translucent-box {
+            font-size: large;
+            position: absolute;
+            width: 750px;
+            top: 50%;
+            left: 28%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin-left: 40px;
+        }
+        
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.form-group label {
-    display: block;
+.project {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.project h2 {
+    font-weight: bold;
     margin-bottom: 10px;
 }
 
-.form-group input, .form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
+.project p {
+    margin-bottom: 20px;
 }
 
-button[type="submit"] {
+button {
     background-color: #4CAF50;
     color: #fff;
     padding: 10px 20px;
@@ -31,6 +67,6 @@ button[type="submit"] {
     cursor: pointer;
 }
 
-button[type="submit"]:hover {
+button:hover {
     background-color: #3e8e41;
 }
