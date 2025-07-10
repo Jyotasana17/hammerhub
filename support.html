@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .support-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.support-section {
+    margin-bottom: 40px;
+}
+
+.accordion {
+    margin-bottom: 20px;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+}
+
+.accordion-button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+}
+
+.accordion-button:hover {
+    background-color: #3e8e41;
+}
+
+.accordion-content {
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    display: none;
+}
+
+#support-form {
+    margin-top: 20px;
+}
+
+#support-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#support-form input, #support-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+#support-form button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#support-form button[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+</style>
+<body>
+    <div class="support-container">
+    <h1>Support</h1>
+    <div class="support-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="accordion">
+            <div class="accordion-item">
+                <button class="accordion-button">What is this website about?</button>
+                <div class="accordion-content">
+                    <p>This website is designed to provide information and resources on various topics.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-button">How do I use the website?</button>
+                <div class="accordion-content">
+                    <p>You can navigate through the website using the menu or search bar. You can also find tutorials and guides you in the resources section.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="support-section">
+        <h2>Contact Support</h2>
+        <form id="support-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+<script src="support.js"></script>
+</body>
+</html>
