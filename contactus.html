@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us and Report</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Us and Report</h1>
+        <form id="Your name:"><label for="name"></label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Your message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <div class="report-section">
+        <h2>Report an Issue</h2>
+        <form id="report-form">
+            <label for="issue">Describe the issue:</label>
+            <textarea id="issue" name="issue" required></textarea>
+
+            <button type="submit">Submit Report</button>
+        </form>
+    </div>
+</div>
+
+<script src="contact.js"></script>
+</body>
+</html>
+
+
