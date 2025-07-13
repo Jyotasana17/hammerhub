@@ -76,6 +76,19 @@
 //         resultDisplay.textContent = 'Please enter valid numbers.';
 //       }
     // });
+    const constructioncost = {
+   "mumbai": 3100,
+        "delhi": 2700,
+        "bangalore": 2500,
+        "chennai": 2400,
+        "hyderabad": 2200,
+        "pune": 2400,
+        "kolkata": 2000,
+        "indore": 1800,
+        "nagpur": 1700,
+        "mysuru": 1600
+
+};
 
     const form = document.getElementById('estimator-form');
         const resultDiv = document.getElementById('result');
@@ -105,4 +118,12 @@
                 }
             })
             .catch((error) => console.error(error));
+
+
+      if (!isNaN(city) && !isNaN(areaSqft)) {
+        const product = constructioncost[city]*areaSqft;
+        resultDisplay.textContent = 'Result: ${product};'
+      } else {
+        resultDisplay.textContent = 'Please enter valid numbers.';
+      }
         });
