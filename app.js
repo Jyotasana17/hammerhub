@@ -85,7 +85,7 @@
             e.preventDefault();
 
             const city = document.getElementById('city').value;
-            const areaSqft = document.getElementById('area_sqft').value;
+            const areaSqft = document.getElementById('area').value;
 
             fetch('/estimate', {
                 method: 'POST',
