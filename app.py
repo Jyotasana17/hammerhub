@@ -18,7 +18,7 @@
 
 from flask import Flask, render_template, request, jsonify
 
-app = Flask(_name_)
+app = Flask(__name__)
 
 # Sample city construction cost per m²
 CITY_COSTS = {
@@ -49,5 +49,5 @@ def estimate():
 
     return jsonify({"estimated_cost": estimated_cost})
 
-if _name_ == '_main_':
+if __name__ == '_main_':
     app.run(debug=True)
