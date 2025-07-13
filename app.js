@@ -92,7 +92,7 @@
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ city, area_sqft })
+                body: JSON.stringify({ city, areaSqft })
             })
             .then((response) => response.json())
             .then((data) => {
