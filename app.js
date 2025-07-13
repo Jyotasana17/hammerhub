@@ -81,7 +81,7 @@
         const resultDiv = document.getElementById('result');
         const errorDiv = document.getElementById('error');
 
-        form.addEventListener('submit', (e) => {
+        form.addEventListener('estimate-btn', (e) => {
             e.preventDefault();
 
             const city = document.getElementById('city').value;
