@@ -22,16 +22,21 @@ app = Flask(__name__)
 
 # Sample city construction cost per m²
 CITY_COSTS = {
-    "New York": 3000,
-    "Los Angeles": 2500,
-    "Chicago": 2200,
-    "Houston": 2000,
-    "San Francisco": 3500
+     "mumbai": 3100,
+        "delhi": 2700,
+        "bangalore": 2500,
+        "chennai": 2400,
+        "hyderabad": 2200,
+        "pune": 2400,
+        "kolkata": 2000,
+        "indore": 1800,
+        "nagpur": 1700,
+        "mysuru": 1600
 }
 
 @app.route('/')
 def index():
-    return render_template('index.html', cities=list(CITY_COSTS.keys()))
+    return render_template('calci.html', cities=list(CITY_COSTS.keys()))
 
 @app.route('/estimate', methods=['POST'])
 def estimate():
